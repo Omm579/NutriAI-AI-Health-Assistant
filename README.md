@@ -150,7 +150,8 @@ Ensure Python 3.10+ is installed on your local computer.
 
 1. **Clone or Navigate to the Workspace**:
    ```bash
-   cd C:\Users\USER\.gemini\antigravity\scratch\NutriAI
+   git clone https://github.com/Omm579/NutriAI-AI-Health-Assistant.git
+   cd NutriAI-AI-Health-Assistant
    ```
 
 2. **Create and Activate a Virtual Environment**:
