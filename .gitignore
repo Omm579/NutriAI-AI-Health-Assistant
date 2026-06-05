@@ -1,0 +1,32 @@
+# Python virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Local databases and log exports
+*.db
+*.sqlite
+exports/*.csv
+exports/*.pdf
+
+# Local environment configuration
+.env
+
+# IDE and tool metadata directories
+.vscode/
+.idea/
+.qodo/
+.dist/
+.system_generated/
+
+# OS metadata
+.DS_Store
+Thumbs.db

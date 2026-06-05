@@ -1,0 +1,250 @@
+/* 
+======================================================================
+NutriAI Arclight Luxury Theme (100% Unique & Ultra-Premium)
+A cinematic health dashboard styled with the elegant Arclight aesthetic.
+Colors:
+- Canvas Background: #05070B (Deep Navy-Black)
+- Card Background: #0C0F1A (Navy-Slate Card)
+- Primary Accent: #E5C483 (Luxury Champagne Gold)
+- Secondary Accent: #A68B5C (Muted Golden Sand)
+- Borders: rgba(229, 196, 131, 0.08) (Translucent Gold)
+- Typography Headers: Cormorant Garamond (Editorial Serif)
+- Typography Body: Plus Jakarta Sans / Inter (Clean Modern Sans)
+======================================================================
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+/* Global Reset & Body Background with Radial Golden Spotlight */
+.stApp {
+    background-color: #05070B !important;
+    background-image: 
+        radial-gradient(circle at 50% 0%, rgba(229, 196, 131, 0.07) 0%, transparent 55%),
+        radial-gradient(circle at 5% 30%, rgba(166, 139, 92, 0.02) 0%, transparent 40%),
+        radial-gradient(circle at 95% 75%, rgba(229, 196, 131, 0.04) 0%, transparent 50%) !important;
+    color: #E5E7EB !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    letter-spacing: -0.01em;
+}
+
+/* Typography styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif !important;
+    color: #FFFFFF !important;
+    font-weight: 500 !important;
+    letter-spacing: -0.01em !important;
+}
+
+/* Specific styling for page headers */
+.stApp h1 {
+    font-size: 2.85rem !important;
+    font-weight: 400 !important;
+    line-height: 1.15 !important;
+}
+
+/* Hero title styled with Arclight editorial typography */
+.hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.15;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+    text-shadow: 0 0 40px rgba(229, 196, 131, 0.05);
+}
+
+/* Floating Sidebar Navigation */
+[data-testid="stSidebar"] {
+    background-color: #020306 !important;
+    border-right: 1px solid rgba(229, 196, 131, 0.05) !important;
+}
+[data-testid="stSidebarNav"] {
+    background-color: transparent !important;
+    padding-top: 15px;
+}
+
+/* Premium Arclight 28px Rounded Cards (No cheap glassmorphic blurs, solid and structured) */
+.glass-card {
+    background: #0C0F1A;
+    border: 1px solid rgba(229, 196, 131, 0.08);
+    border-radius: 28px;
+    padding: 32px;
+    box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.9);
+    margin-bottom: 24px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-card:hover {
+    border-color: rgba(229, 196, 131, 0.18);
+    box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.95), 0 0 15px rgba(229, 196, 131, 0.02);
+    transform: translateY(-2px);
+}
+
+/* Custom inputs styling (Minimal, elegant) */
+div.stTextInput input, div.stNumberInput input, div.stSelectbox select, div.stTextArea textarea {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    color: #FFFFFF !important;
+    border-radius: 10px !important;
+    padding: 12px !important;
+    font-size: 0.92rem !important;
+    transition: all 0.3s ease !important;
+}
+div.stTextInput input:hover, div.stNumberInput input:hover, div.stSelectbox select:hover {
+    border-color: rgba(229, 196, 131, 0.2) !important;
+    background: rgba(255, 255, 255, 0.03) !important;
+}
+div.stTextInput input:focus, div.stNumberInput input:focus, div.stSelectbox select:focus {
+    border-color: #E5C483 !important;
+    box-shadow: 0 0 0 2px rgba(229, 196, 131, 0.15) !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+}
+
+/* Luxury Champagne Gold Action Buttons */
+div.stButton > button, div.stDownloadButton > button {
+    background: #E5C483 !important;
+    color: #05070B !important;
+    border: 1px solid #E5C483 !important;
+    border-radius: 10px !important;
+    padding: 12px 28px !important;
+    font-size: 0.88rem !important;
+    font-weight: 600 !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    box-shadow: 0 4px 14px rgba(229, 196, 131, 0.15) !important;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    width: 100%;
+}
+div.stButton > button:hover, div.stDownloadButton > button:hover {
+    transform: translateY(-2px) !important;
+    background: #F0D7A7 !important;
+    border-color: #F0D7A7 !important;
+    box-shadow: 0 6px 20px rgba(229, 196, 131, 0.25) !important;
+}
+
+/* Secondary Actions override (Muted gold outlines) */
+.secondary-btn > button {
+    background: transparent !important;
+    border: 1px solid rgba(229, 196, 131, 0.2) !important;
+    color: #E5C483 !important;
+    box-shadow: none !important;
+    text-transform: none !important;
+    font-size: 0.9rem !important;
+}
+.secondary-btn > button:hover {
+    background: rgba(229, 196, 131, 0.05) !important;
+    border-color: #E5C483 !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Metric Display enhancements */
+.premium-metric-lbl {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: #9CA3AF;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 6px;
+}
+.premium-metric-val {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.35rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 1.1;
+}
+.premium-metric-sub {
+    font-size: 0.78rem;
+    color: #E5C483;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+/* Navigation tabs styling overrides */
+.stTabs [data-baseweb="tab-list"] {
+    background-color: transparent !important;
+    border-bottom: 1px solid rgba(229, 196, 131, 0.08) !important;
+    gap: 15px;
+}
+.stTabs [data-baseweb="tab"] {
+    color: #9CA3AF !important;
+    font-weight: 500 !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-size: 0.92rem !important;
+    padding: 12px 18px !important;
+    transition: all 0.2s ease !important;
+}
+.stTabs [aria-selected="true"] {
+    color: #E5C483 !important;
+    border-bottom: 2px solid #E5C483 !important;
+}
+
+/* Custom progress overrides (Muted gold bar) */
+.stProgress > div > div > div > div {
+    background: #E5C483 !important;
+    border-radius: 9999px !important;
+}
+
+/* Custom styled badge items (Luxury minimal labels) */
+.premium-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    border-radius: 6px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.badge-blue { background: rgba(229, 196, 131, 0.08); color: #E5C483; border: 1px solid rgba(229, 196, 131, 0.15); }
+.badge-green { background: rgba(255, 255, 255, 0.03); color: #E5E7EB; border: 1px solid rgba(255, 255, 255, 0.08); }
+.badge-purple { background: rgba(166, 139, 92, 0.08); color: #A68B5C; border: 1px solid rgba(166, 139, 92, 0.15); }
+.badge-cyan { background: rgba(255, 255, 255, 0.05); color: #FFFFFF; border: 1px solid rgba(255, 255, 255, 0.15); }
+
+/* Premium User/Coach Chat Bubbles styling */
+.chat-bubble-user {
+    background: rgba(229, 196, 131, 0.03) !important;
+    border: 1px solid rgba(229, 196, 131, 0.12) !important;
+    border-radius: 16px 16px 4px 16px !important;
+    padding: 16px !important;
+    color: #FFFFFF !important;
+}
+.chat-bubble-coach {
+    background: #0C0F1A !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 16px 16px 16px 4px !important;
+    padding: 16px !important;
+    color: #E5E7EB !important;
+}
+
+/* File Upload drag area styled */
+div[data-testid="stFileUploader"] {
+    background: rgba(12, 15, 26, 0.5) !important;
+    border: 1px dashed rgba(229, 196, 131, 0.15) !important;
+    border-radius: 16px !important;
+    padding: 24px !important;
+    transition: all 0.3s ease !important;
+}
+div[data-testid="stFileUploader"]:hover {
+    border-color: #E5C483 !important;
+    background: rgba(229, 196, 131, 0.02) !important;
+}
+
+/* Table overrides */
+div[data-testid="stTable"] td, div[data-testid="stTable"] th {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03) !important;
+    padding: 12px !important;
+    font-size: 0.88rem !important;
+}
+div[data-testid="stTable"] th {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-weight: 500 !important;
+    color: #9CA3AF !important;
+}
+
+/* Hide default streamlit loading bars and footer, keep header transparent for toggle icon */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+[data-testid="stHeader"] {
+    background-color: transparent !important;
+}
